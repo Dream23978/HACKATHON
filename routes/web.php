@@ -1,8 +1,9 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
 use Livewire\Volt\Volt;
+use Illuminate\Support\Facades\Route;
 use App\http\Controllers\LoginController;
+use App\Http\Controllers\DaftarController;
 
 Route::get('/', function () {
     return view('Index.Login');
@@ -14,6 +15,19 @@ Route::get('/reset', function () {
 // Route::get('/login',[LoginController::class,'create']);
 Route::post('/Login/store',[LoginController::class,'store'])->name('Login.store');
 Route::get('/Login/create',[LoginController::class,'create'])->name('masuk');
+
+Route::get('/home', function () {
+    return view('homepage');
+});
+
+Route::get('/daftar', function () {
+    return view('daftar');
+});
+Route::get('/daftarsuccess', function () {
+    return view('DaftarSucceess');
+});
+
+Route::post('/daftar/store', [DaftarController::class, 'store']) -> name ('daftar.store');
 
 // Route::view('dashboard', 'dashboard')
 //     ->middleware(['auth', 'verified'])

@@ -4,16 +4,22 @@ use Livewire\Volt\Volt;
 use Illuminate\Support\Facades\Route;
 use App\http\Controllers\LoginController;
 use App\Http\Controllers\DaftarController;
+use App\Http\Controllers\RegisterController;
 
 Route::get('/', function () {
     return view('Index.Login');
-})->name('login');
+})->name('login_aja');
+
+Route::get('/register_user', function () {
+    return view('register');
+});
 
 Route::get('/reset', function () {
     return view('reset');
 })->name('reset');
 // Route::get('/login',[LoginController::class,'create']);
 Route::post('/Login/store',[LoginController::class,'store'])->name('Login.store');
+Route::post('/register/store',[RegisterController::class,'store'])->name('register.store');
 Route::get('/Login/create',[LoginController::class,'create'])->name('masuk');
 
 Route::get('/home', function () {

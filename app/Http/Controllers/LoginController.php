@@ -35,40 +35,39 @@ class LoginController extends Controller
             'password' => 'required|min:6|',
 
         ]);
-
-        return redirect()->route('Home');
-
+        return view('homepage');
+        // return redirect()->route('homepage');
     }
 
     /**
      * Display the specified resource.
      */
-    public function show(Login $login)
-    {
-        //
-    }
+    // public function show(Login $login)
+    // {
+    //     //
+    // }
 
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(Login $login)
-    {
-        //
-    }
+    // /**
+    //  * Show the form for editing the specified resource.
+    //  */
+    // public function edit(Login $login)
+    // {
+    //     //
+    // }
 
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(Request $request, Login $login)
-    {
-        //
-    }
+    // /**
+    //  * Update the specified resource in storage.
+    //  */
+    // public function update(Request $request, Login $login)
+    // {
+    //     //
+    // }
 
-    /**
-     * Remove the specified resource from storage.
-     */
-    public function destroy(Login $login)
-    {
-        //
-    }
+    // /**
+    //  * Remove the specified resource from storage.
+    //  */
+    // public function destroy(Login $login)
+    // {
+    //     //
+    // }
 }

@@ -15,9 +15,9 @@ return new class extends Migration
             $table->id();
             $table->string("username");
             $table->string("password");
-            $table->string('pilih_provinsi');
-            $table->string('pilih_rumah_sakit');
-            $table->string('pilih_poli');
+            $table->string('pilih_provinsi')-> nullable()-> default('prov_null');
+            $table->string('pilih_rumah_sakit')-> nullable()-> default('rs_null');
+            $table->string('pilih_poli')-> nullable()-> default('poli_null');
             $table->timestamps();
         });
     }

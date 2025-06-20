@@ -17,9 +17,9 @@
   shadow  shadow-xl/30 scale-75">
         </div>
 
-        <h2 class="mt-10 text-center text-2xl/9 font-bold tracking-tight text-gray-900">Login</h2>
+        <h2 class="mt-10 text-center text-2xl/9 font-bold tracking-tight text-gray-900">Register</h2>
         <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
-            <form class="space-y-6" action="{{ route('Login.store') }}" method="POST">
+            <form class="space-y-6" action="{{ route('register.store') }}" method="POST">
                 @csrf
                 <div>
                     <label for="username" class="block text-sm/6 font-medium text-gray-900 font-sans">Nama
@@ -33,10 +33,10 @@
                 <div>
                     <div class="flex items-center justify-between">
                         <label for="password" class="block text-sm/6 font-medium text-gray-900">Kata sandi</label>
-                        <div class="text-sm">
+                        {{-- <div class="text-sm">
                             <a href="{{ route('reset') }}"
                                 class="font-semibold text-indigo-600 hover:text-indigo-500">Lupa Password?</a>
-                        </div>
+                        </div> --}}
                     </div>
                     <div class="mt-2">
                         <input type="password" name="password" id="password" autocomplete="current-password" required
@@ -46,13 +46,13 @@
 
                 <div>
                     <button type="submit"
-                        class="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm/6 font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Masuk</button>
+                        class="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm/6 font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Daftar</button>
                 </div>
             </form>
 
             <p class="mt-10 text-center text-sm/6 text-gray-500">
-                Tidak punya akun?
-                <a href="/register_user" class="font-semibold text-indigo-600 hover:text-indigo-500">Daftar disini</a>
+                Sudah punya akun?
+                <a href="/" class="font-semibold text-indigo-600 hover:text-indigo-500">Login</a>
             </p>
         </div>
     </div>

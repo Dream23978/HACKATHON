@@ -5,13 +5,37 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    {{-- @vite('resources/css/app.css') --}}
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    @vite('resources/css/app.css')
+
     <title>Daftar</title>
 </head>
 
-<body class="bg-gray-50 flex items-center justify-center min-h-screen">
-    <form method="POST" action="{{ route('daftar.store') }}" class="bg-white p-6 rounded-lg shadow-md w-full max-w-md">
+<body class="animate-fadeinb" >
+      <nav class=" top-0 w-full backdrop-blur bg-white/80 shadow-sm z-50">
+  <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+    <h1 class="text-xl font-extrabold tracking-wider text-slate-900">MEADYS</h1>
+
+
+    <div class="flex-1 flex justify-center">
+      <ul class="flex gap-6 text-sm md:text-base font-medium">
+        <li><a href="/home" class="hover:text-indigo-600 transition">Home</a></li>
+        <li><a href="/StatusAntrian" class="hover:text-indigo-600 transition">Status Antrian</a></li>
+        <li><a href="/cekstatus" class="hover:text-indigo-600 transition">Riwayat</a></li>
+        <li><a href="/jadwal" class="hover:text-indigo-600 transition">Jadwal Konsul</a></li>
+        <li><a href="/jadwal" class="hover:text-indigo-600 transition">Pembayaran</a></li>
+      </ul>
+    </div>
+
+    <div class="hidden md:block ml-4 text-sm text-slate-700">
+      {{ date('Y M d | H:i') }}
+    </div>
+  </div>
+</nav>
+ <h1 class="font-bold text-6xl lg:text-center lg:mt-5  drop-shadow-2xl">Pendaftaran</h1>
+    <section class="bg-amber-300-50 flex items-center justify-center min-h-screen  lg:-mt-28">
+
+
+    <form method="POST" action="{{ route('daftar.store') }}" class="bg-white p-6 rounded-lg shadow-md w-full max-w-md md:block sm:block">
         @csrf
         <div class="mb-4">
             <label for="pilih_provinsi" class="block text-sm font-medium text-gray-700">Pilih Provinsi</label>
@@ -47,11 +71,12 @@
             </select>
         </div>
         <div class="flex justify-center hidden" id="button_selesai">
-            <button type="submit" class="border-2 m-2 p-2 rounded-2xl bg-blue-600 text-white hover:bg-blue-500 transition duration-200">
+            <button type="submit" class="border-2 m-2 p-2 rounded-2xl bg-blue-600 text-white hover:bg-blue-500 transition duration-200" onclick="showCustomImageSwal1()">
                 Selesai
             </button>
         </div>
     </form>
+     </section>
 
     <script>
         let pilihProv = document.getElementById("pilih_provinsi");
@@ -88,6 +113,20 @@
             }
         });
     </script>
+
+<footer class="bg-accent-content py-6 px-6 border-t mt-12 lg:-mt-11 h-36 rounded-2xl">
+        <div class=" font-bold font-mono max-w-6xl mx-auto text-center text-white  text-[1rem] mt-6 lg:-ml-6">
+          <h1 class="lg:-ml-[35rem]">Kontak Kami</h1>
+          <h1 class="lg:-ml-[35rem]  hover:underline">MEADYS@Gmail.com</h1>
+        </div>
+        <div class=" font-bold font-mono max-w-6xl mx-auto text-center text-white  text-[1rem] mt-6">
+          <h1 class="lg:-ml-[0rem] lg:-mt-19">Alamat</h1>
+          <h1 class="lg:-ml-[0rem] lg:mt-1 hover:underline">Jalan Ujung Pandang, Sungai Jawi, Pal Lima </h1>
+        </div>
+        <div class="font-bold font-mono max-w-6xl mx-auto text-center text-white  text-[1rem] lg:ml-[60rem] lg:-mt-[3rem] lg:opacity-75">
+               &copy; MEADYS.<br>Hak cipta dilindungi
+               </div>
+    </footer>
 </body>
 
 </html>

@@ -10,8 +10,14 @@
 </head>
 
 <body>
-    <script>
-        alert('Berhasil Mendaftar');
+
+        <script>
+    window.showCustomImageSwal1 = function () {
+        Swal.fire({
+  title: "Laporan Terkirim!",
+  icon: "success",
+  draggable: true });}
+
         window.location.href = '/home';
     </script>
 </body>

@@ -19,9 +19,9 @@
     <div class="flex-1 flex justify-center">
       <ul class="flex gap-6 text-sm md:text-base font-medium">
         <li><a href="/home" class="hover:text-indigo-600 transition">Home</a></li>
-        <li><a href="/StatusAntrian" class="hover:text-indigo-600 transition">Status Antrian</a></li>
-        <li><a href="/cekstatus" class="hover:text-indigo-600 transition">Riwayat</a></li>
-        <li><a href="/jadwal" class="hover:text-indigo-600 transition">Jadwal Konsul</a></li>
+        <li><a href="/statusAntrian" class="hover:text-indigo-600 transition"> Antrian</a></li>
+
+        <li><a href="/jadwalKonsul" class="hover:text-indigo-600 transition">Jadwal Konsul</a></li>
         <li><a href="/jadwal" class="hover:text-indigo-600 transition">Pembayaran</a></li>
       </ul>
     </div>

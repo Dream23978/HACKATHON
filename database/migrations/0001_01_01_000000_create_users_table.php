@@ -17,9 +17,11 @@ return new class extends Migration
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
+            $table->string('_token')-> nullable() -> default('NULL');
             $table->string('pilih_provinsi')-> nullable()-> default('prov_null');
             $table->string('pilih_rumah_sakit')-> nullable()-> default('rs_null');
             $table->string('pilih_poli')-> nullable()-> default('poli_null');
+            $table->integer('registration_number')-> nullable()-> default(123);
             $table->rememberToken();
             $table->timestamps();
         });

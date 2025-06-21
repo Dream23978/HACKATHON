@@ -2,14 +2,22 @@
 
 use Livewire\Volt\Volt;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AntriController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\DaftarController;
 use App\Http\Controllers\RegisterController;
-use App\Http\Controllers\AntriController;
+use App\Http\Controllers\ScheduleController;
+
 
 Route::get('/', function () {
     return view('Index.Login');
 })->name('login_user');
+
+// Route::get('/antrian', function () {
+//     return view('statusAntrian');
+// })->name('Antri');
+
+
 Route::get('/pembayaran', function () {
     return view('pembayaran');
 })->name('pembayaran');
@@ -23,6 +31,7 @@ Route::get('/reset', function () {
 })->name('reset');
 // Route::get('/login',[LoginController::class,'create']);
 Route::post('/login/store',[LoginController::class,'store'])->name('login_store');
+Route::get('/antrian',[AntriController::class,'index'])->name('antri_index');
 Route::post('/register/store',[RegisterController::class,'store'])->name('register.store');
 Route::get('/Login/create',[LoginController::class,'create'])->name('masuk');
 
@@ -40,7 +49,8 @@ Route::get('/daftarsuccess', function () {
 Route::post('/daftar/store', [DaftarController::class, 'store']) -> name ('daftar.store');
 Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
 
-Route::get('/cek-antrian', [AntriController::class, 'index'])->name('cek-antrian');
+Route::get('/jadwalKonsul', [ScheduleController::class, 'index'])->name('jadwal_konsul');
+// Route::get('/cek_antrian2', [AntriController::class, 'index'])->name('antrian2');
 
 // Route::view('dashboard', 'dashboard')
 //     ->middleware(['auth', 'verified'])

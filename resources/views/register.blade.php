@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Login</title>
-    {{-- @vite('resources/css/app.css') --}}
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    @vite('resources/css/app.css')
+    {{-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> --}}
 </head>
 
 <body class="bg-gradient-to-t from-[#8db9f2c8] to-[#fcfcfc] flex items-center justify-center min-h-screen">
 
-    <img src="{{ url('img/LOGO_MEADYS.png') }}" height="240" class="relative -top-14">
+    <img src="{{ url('img/LOGO.png') }}" height="240" class="relative -top-14">
     <div class="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8 -mt-40 rounded-2xl shadow-xl w-full max-w-md">
         <h2 class="mt-10 text-center text-2xl font-bold tracking-tight text-gray-900">Register</h2>
         <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">

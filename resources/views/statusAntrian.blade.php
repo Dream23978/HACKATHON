@@ -26,9 +26,9 @@
                 <p class="text-gray-700">Nama: <span class="font-bold">{{ $name }}</span></p>
                 <p class="text-gray-700">Nomor Pendaftaran: <span class="font-bold">{{ $registration_number }}</span>
                 </p>
-                <p class="text-gray-700">Provinsi: <span class="font-bold">{{ $province }}</span></p>
-                <p class="text-gray-700">Rumah Sakit: <span class="font-bold">{{ $hospital }}</span></p>
-                <p class="text-gray-700">Poli: <span class="font-bold">{{ $polyclinic }}</span></p>
+                <p class="text-gray-700">Provinsi: <span class="font-bold">{{ $pilih_provinsi }}</span></p>
+                <p class="text-gray-700">Rumah Sakit: <span class="font-bold">{{ $pilih_rumah_sakit }}</span></p>
+                <p class="text-gray-700">Poli: <span class="font-bold">{{ $pilih_poli }}</span></p>
             </div>
 
             <div class="mb-6">
@@ -42,7 +42,7 @@
                 <h3 class="text-md font-medium">Apa yang harus dilakukan selanjutnya?</h3>
                 <p class="text-gray-700">Silakan tunggu panggilan dari dokter. Anda akan diberitahu melalui SMS atau
                     aplikasi ini.</p>
-                <a href="{{ route('home') }}"
+                <a href="{{ route('homepage') }}"
                     class="mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition duration-300">
                     Kembali ke Menu Utama
                 </a>

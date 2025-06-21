@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\User; // Menggunakan model User bawaan Laravel
+use App\Models\User;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth; // Import Auth facade
+use Illuminate\Support\Facades\Auth; 
 
 class LoginController extends Controller
 {

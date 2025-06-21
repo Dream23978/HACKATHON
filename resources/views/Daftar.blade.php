@@ -46,7 +46,7 @@
                 <option value="poli_saraf">Poli Saraf</option>
             </select>
         </div>
-        <div class="flex justify-center hidden" id="button_selesai">
+        <div class="justify-center hidden" id="button_selesai">
             <button type="submit" class="border-2 m-2 p-2 rounded-2xl bg-blue-600 text-white hover:bg-blue-500 transition duration-200">
                 Selesai
             </button>

@@ -13,9 +13,9 @@ return new class extends Migration
     {
         Schema::create('schedule', function (Blueprint $table) {
             $table->id();
-            $table->date('date');
-            $table->time('time');
-            $table->string('doctor_name');
+            // $table->date('date')->nullable()->default("2025/01/01");
+            // $table->timestamp('time')->nullable()->default(time());
+            $table->string('doctor_name')->nullable()->default('Dokter Brando');
             $table->timestamps();
         });
     }

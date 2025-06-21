@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\schedule;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Livewire\Attributes\Validate;
@@ -23,6 +24,7 @@ class DaftarController extends Controller
 
         User::query()
             ->update($request -> all());
+        schedule::create();
         // User::update($request -> all());
         // User::find()
         //     ->update([

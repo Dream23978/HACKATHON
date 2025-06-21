@@ -32,6 +32,8 @@ class AntriController extends Controller
             $user->pilih_provinsi = 'Kalimantan Utara';
         } else if ($user->pilih_provinsi == 'kalteng') {
             $user->pilih_provinsi = 'Kalimantan Tengah';
+        } else if ($user->pilih_provinsi == 'prov_null') {
+            $user->pilih_provinsi = 'Belum Memilih Provinsi';
         }
 
         if ($user->pilih_rumah_sakit == 'rs_a') {
@@ -44,6 +46,8 @@ class AntriController extends Controller
             $user->pilih_rumah_sakit = 'Rumah Sakit D';
         } else if ($user->pilih_rumah_sakit == 'rs_e') {
             $user->pilih_rumah_sakit = 'Rumah Sakit E';
+        } else if ($user->pilih_rumah_sakit == 'rs_null') {
+            $user->pilih_rumah_sakit = 'Belum Memilih Rumah Sakit';
         }
 
         if ($user->pilih_poli == 'poli_anak') {
@@ -56,6 +60,8 @@ class AntriController extends Controller
             $user->pilih_poli = 'Poli Gigi';
         } else if ($user->pilih_poli == 'poli_saraf') {
             $user->pilih_poli = 'Poli Saraf';
+        } else if ($user->pilih_poli == 'poli_null') {
+            $user->pilih_poli = 'Belum Memilih Poli';
         }
 
         return view('statusAntrian', [

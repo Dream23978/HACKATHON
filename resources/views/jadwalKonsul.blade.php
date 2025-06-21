@@ -26,8 +26,8 @@
             <table class="min-w-full bg-white border border-gray-200">
                 <thead>
                     <tr>
-                        <th class="py-2 px-4 border-b">Tanggal</th>
-                        <th class="py-2 px-4 border-b">Waktu</th>
+                        <th class="py-2 px-4 border-b">Tanggal & waktu (created)</th>
+                        {{-- <th class="py-2 px-4 border-b">Waktu</th> --}}
                         <th class="py-2 px-4 border-b">Dokter</th>
                         <th class="py-2 px-4 border-b">Aksi</th>
                     </tr>
@@ -35,13 +35,13 @@
                 <tbody>
                     @foreach ($schedules as $schedule)
                         <tr>
-                            <td class="py-2 px-4 border-b">{{ $schedule->date }}</td>
-                            <td class="py-2 px-4 border-b">{{ $schedule->time }}</td>
-                            <td class="py-2 px-4 border-b">{{ $schedule->doctor_name }}</td>
-                            <td class="py-2 px-4 border-b">
-                                <a href="{{ route('daftar', ['schedule_id' => $schedule->id]) }}"
-                                    class="text-blue-600 hover:underline">Daftar</a>
-                            </td>
+                            <th class="py-2 px-4 border-b">{{ $schedule->created_at }}</th>
+                            {{-- <td class="py-2 px-4 border-b">{{ $schedule->created_at }}</td> --}}
+                            <th class="py-2 px-4 border-b">{{ $schedule->doctor_name }}</th>
+                            <th class="py-2 px-4 border-b">
+                                <a href="{{ route('antri_index', ['schedule_id' => $schedule->id]) }}"
+                                    class="text-blue-600 hover:underline">Cek Antrian</a>
+                            </th>
                         </tr>
                     @endforeach
                 </tbody>

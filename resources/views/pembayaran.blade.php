@@ -10,14 +10,34 @@
 </head>
 
 <body class="min-h-screen bg-gray-50">
-    <!-- Header -->
+
+
+
+         <nav class=" top-0 w-full backdrop-blur bg-white/80 shadow-sm z-50">
+        <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+            <h1 class="text-xl font-extrabold tracking-wider text-slate-900">MEADYS</h1>
+
+
+            <div class="flex-1 flex justify-center">
+                <ul class="flex gap-6 text-sm md:text-base font-medium">
+                    <li><a href="/home" class="hover:text-indigo-600 transition">Home</a></li>
+                    <li><a href="/antrian" class="hover:text-indigo-600 transition"> Antrian</a></li>
+
+                    <li><a href="/jadwalKonsul" class="hover:text-indigo-600 transition">Jadwal Konsul</a></li>
+                    <li><a href="/pembayaran" class="hover:text-indigo-600 transition">Pembayaran</a></li>
+                </ul>
+            </div>
+
+            <div class="hidden md:block ml-4 text-sm text-slate-700">
+                {{ date('Y M d | H:i') }}
+            </div>
+        </div>
+    </nav>
     <header class="bg-white shadow-sm py-4 px-6">
         <div class="max-w-6xl mx-auto">
             <h1 class="text-2xl font-bold">Pembayaran</h1>
         </div>
     </header>
-
-    <!-- Main Content -->
     <main class="max-w-6xl mx-auto px-4 sm:px-6 py-12">
         <div class="bg-white rounded-lg shadow p-6">
             <h2 class="text-lg font-semibold mb-4">Metode Pembayaran</h2>

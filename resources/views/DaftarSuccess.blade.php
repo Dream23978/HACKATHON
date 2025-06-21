@@ -11,12 +11,12 @@
 
 <body>
 
-        <script>
-    window.showCustomImageSwal1 = function () {
-        Swal.fire({
-  title: "Laporan Terkirim!",
-  icon: "success",
-  draggable: true });}
+    <script>
+        //     window.showCustomImageSwal1 = function () {
+        //         Swal.fire({
+        //   title: "Laporan Terkirim!",
+        //   icon: "success",
+        //   draggable: true });}
 
         window.location.href = '/home';
     </script>

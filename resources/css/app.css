@@ -14,6 +14,7 @@
      --animate-slide: slide 2s cubic-bezier(0, .97, .36, .98);
     --animate-fadeinb: fadeinb 1s cubic-bezier(0, .97, .36, .98);
     --animate-type: typing 2s linear;
+    --animate-drop: drop 2s linear
     --color-zinc-50: #fafafa;
     --color-zinc-100: #f5f5f5;
     --color-zinc-200: #e5e5e5;
@@ -71,6 +72,9 @@
       width: 100;
     }
   }
+
+
+
 @layer theme {
     .dark {
         --color-accent: var(--color-white);
@@ -78,6 +82,8 @@
         --color-accent-foreground: var(--color-neutral-800);
     }
 }
+
+
 
 @layer base {
 

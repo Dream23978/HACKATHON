@@ -21,14 +21,14 @@
                 <div>
                     <label for="username" class="block text-sm font-medium text-gray-900">Nama Pengguna</label>
                     <div class="mt-2">
-                        <input type="text" name="name" id="username" required
+                        <input type="text" name="name" id="username" required placeholder="masukan nama pengguna / username"
                             class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 border border-gray-300 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-600" />
                     </div>
                 </div>
                 <div>
                     <label for="email" class="block text-sm font-medium text-gray-900">Email</label>
                     <div class="mt-2">
-                        <input type="email" name="email" id="email" required
+                        <input type="email" name="email" id="email" required placeholder="masukkan email Anda"
                             class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 border border-gray-300 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-600" />
                     </div>
                 </div>
@@ -37,7 +37,16 @@
                         <label for="password" class="block text-sm font-medium text-gray-900">Kata Sandi</label>
                     </div>
                     <div class="mt-2">
-                        <input type="password" name="password" id="password" autocomplete="current-password" required
+                        <input type="password" name="password" id="password" autocomplete="current-password" required placeholder="Masukan kata sandi anda"
+                            class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 border border-gray-300 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-600" />
+                    </div>
+                </div>
+                <div>
+                    <div class="flex items-center justify-between">
+                        <label for="password" class="block text-sm font-medium text-gray-900">NIK</label>
+                    </div>
+                    <div class="mt-2">
+                        <input type="text" name="nik" id="nik" autocomplete="" required placeholder="Masukan NIK yang sama dengan ktp anda"
                             class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 border border-gray-300 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-600" />
                     </div>
                 </div>

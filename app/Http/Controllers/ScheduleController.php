@@ -3,27 +3,23 @@
 namespace App\Http\Controllers;
 
 use App\Models\schedule;
+use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class ScheduleController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
     public function index()
     {
-        // Fetch consultation schedules from the database
-        $schedules = schedule::all();  // Adjust this query as needed
+        $user = Auth::user();
+        // $name = $user->name;
+        $schedules = schedule::all();
 
-        // Pass schedules data to the view
         return view('jadwalKonsul', [
-            'schedules' => $schedules
+            'schedules' => $schedules,
+            'name' => $user->name,
         ]);
     }
-
-    /**
-     * Show the form for creating a new resource.
-     */
     public function create()
     {
         //

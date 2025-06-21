@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home Page</title>
-      @vite('resources/css/app.css')
+    @vite('resources/css/app.css')
 
     <style>
         @media (max-width: 640px) {
@@ -18,23 +18,20 @@
 </head>
 
 <body class="min-h-screen bg-gray-50 animate-fadeinb">
-<!--nav-->
-    <header class="bg-white shadow-sm py-4 px-6">
-        <div class="flex justify-between items-center max-w-6xl mx-auto">
 
-            <div>
-                <h5 class=" inline-flex text-lg font-medium   ">
+    <!--nav-->
+    <header class="bg-white shadow-sm ">
+        <div class="flex justify-between items-center ml-5 mr-5 mx-auto">
 
-
-
+            <div class="flex ">
+                <img class="w-28 " src="{{ asset('img/LOGO_MEADYS_(1).png') }}" alt="">
+                <h5 class=" inline-flex text-lg font-medium items-center">
                     @auth
                         Hai, {{ Auth::user()->name }}
                     @else
                         Hai, Guest
                     @endauth
-
                 </h5>
-
             </div>
             <div class="flex items-center space-x-4">
                 <button class="p-2 rounded-full hover:bg-gray-100">
@@ -44,8 +41,8 @@
                             d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
                     </svg>
                     <div class="hidden md:block ml-9 -mt-5 text-sm text-slate-700">
-            {{ date('Y M d | H:i') }}
-                </div>
+                        {{ date('Y M d | H:i') }}
+                    </div>
                 </button>
             </div>
         </div>
@@ -129,19 +126,19 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-accent-content py-6 px-6 border-t lg:mt-28  h-36 rounded-2xl sm:flex flex-col md:flex-flex-col sm:-mt-28 md:-mt-[10rem] md:h-max">
+    {{-- <footer class="bg-accent-content py-6 px-6 border-t lg:mt-28  h-36 rounded-2xl sm:flex flex-col md:flex-flex-col sm:-mt-28 md:-mt-[10rem] md:h-max">
         <div class=" font-bold font-mono max-w-6xl mx-auto text-center text-white  text-[1rem] mt-6 lg:-ml-6">
           <h1 class="lg:-ml-[35rem] md:-mt-[45rem]">Kontak Kami</h1>
           <h1 class="lg:-ml-[35rem]  hover:underline">MEADYS@Gmail.com</h1>
         </div>
         <div class=" font-bold font-mono max-w-6xl mx-auto text-center text-white  text-[1rem] mt-6">
-          <h1 class="lg:-ml-[0rem] lg:-mt-19">Alamat</h1>
+          <h1 class="lg:-ml-[0rem] lg:-mt-10">Alamat</h1>
           <h1 class="lg:-ml-[0rem] lg:mt-1 hover:underline">Jalan Ujung Pandang, Sungai Jawi, Pal Lima </h1>
         </div>
         <div class="font-bold font-mono max-w-6xl mx-auto text-center text-white  text-[1rem] lg:ml-[60rem] lg:-mt-[3rem] lg:opacity-75">
                &copy; MEADYS.<br>Hak cipta dilindungi
                </div>
-    </footer>
+    </footer> --}}
 </body>
 
 </html>

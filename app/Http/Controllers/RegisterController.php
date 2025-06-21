@@ -17,12 +17,14 @@ class RegisterController extends Controller
             'name' => 'required|string|max:100',  // Validasi untuk nama
             'email' => 'required|email|unique:users,email',  // Validasi untuk email
             'password' => 'required|min:6',  // Validasi untuk password
+            'nik' => 'required|min:16',  // Validasi untuk password
         ]);
 
         // Proses pendaftaran atau login
         // Misalnya, jika Anda ingin menyimpan pengguna baru
         $user = new User();
         $user->name = $request->name;
+        $user->nik = $request->nik;
         // $user->_token = $request->_token;
         $user->email = $request->email;
         $user->password = Hash::make($request->password);  // Hash password

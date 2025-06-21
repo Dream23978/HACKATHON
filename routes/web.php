@@ -2,10 +2,11 @@
 
 use Illuminate\Support\Facades\Route;
 use Livewire\Volt\Volt;
+use App\Http\Controllers\RekamMedisController;
 
 Route::get('/', function () {
-    return view('welcome');
-})->name('home');
+    return view('index');
+})->name('rekammedis');
 
 Route::view('dashboard', 'dashboard')
     ->middleware(['auth', 'verified'])
@@ -20,3 +21,8 @@ Route::middleware(['auth'])->group(function () {
 });
 
 require __DIR__.'/auth.php';
+
+Route::get('/konfirmasi-data-diri', [KonfirmasiDataDiriController::class, 'index'])->name('konfirmasi-data-diri.index');
+// Route::get('/rekam-medis/create', [RekamMedisController::class, 'create'])->name('rekam-medis.create');
+// Route::post('/rekam-medis', [RekamMedisController::class, 'store'])->name('rekam-medis.store');
+// Route::post('/rekam-medis/search', [RekamMedisController::class, 'search'])->name('rekam-medis.search');

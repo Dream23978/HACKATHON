@@ -121,7 +121,7 @@
     <!-- Footer -->
     <footer class="bg-white py-6 px-6 border-t mt-12">
         <div class="max-w-6xl mx-auto text-center text-gray-500 text-sm">
-            &copy; 2025 Aplikasi Kesehatan. All rights reserved.
+            &copy; 2025 Aplikasi Kesehatan. All rights reserved.2
         </div>
     </footer>
 </body>

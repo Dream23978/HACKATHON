@@ -54,6 +54,12 @@
                 </ul>
                 <p class="text-gray-700">Setelah melakukan transfer, silakan klik tombol di bawah ini untuk konfirmasi.
                 </p>
+                <a href="/home">
+                    <button
+                        class="mt-4 px-4 py-2 bg-yellow-600 text-black rounded hover:bg-green-700 transition duration-300 w-full sm:w-auto">
+                        batalkan / Kembali
+                    </button>
+                </a>
                 <button
                     class="mt-4 px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition duration-300 w-full sm:w-auto">
                     Konfirmasi Transfer
@@ -65,7 +71,7 @@
     <!-- Footer -->
     <footer class="bg-white py-6 px-6 border-t mt-12">
         <div class="max-w-6xl mx-auto text-center text-gray-500 text-sm">
-            &copy; 2023 Aplikasi Kesehatan. All rights reserved.
+            &copy; 2025 Aplikasi Kesehatan. All rights reserved.
         </div>
     </footer>
 </body>

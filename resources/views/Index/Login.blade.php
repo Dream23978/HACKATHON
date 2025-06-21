@@ -38,8 +38,8 @@
                         <input type="checkbox" class="rounded border-gray-300 text-indigo-600 focus:ring-indigo-500" />
                         <span class="ml-2 text-sm text-gray-600">Ingat saya</span>
                     </label>
-                    <a href="{{ route('reset') }}" class="text-sm text-indigo-600 hover:text-indigo-500">Lupa Kata
-                        Sandi?</a>
+                    {{-- <a href="{{ route('reset') }}" class="text-sm text-indigo-600 hover:text-indigo-500">Lupa Kata
+                        Sandi?</a> --}}
                 </div>
 
                 <button type="submit"

@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Jadwal Konsul</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+     @vite('resources/css/app.css')
+    {{-- <script src="https://cdn.tailwindcss.com"></script> --}}
 </head>
 
-<body class="min-h-screen bg-gray-50 animate-fadeinb">
+<body class="min-h-screen bg-gray-50 animate-fadeinb ">
 
       <nav class=" top-0 w-full backdrop-blur bg-white/80 shadow-sm z-50">
         <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
@@ -73,7 +74,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-accent-content py-6 px-6 border-t mt-12 lg:-mt-11 h-36 rounded-2xl">
+    {{-- <footer class="bg-accent-content py-6 px-6 border-t mt-12 lg:-mt-11 h-36 rounded-2xl">
         <div class=" font-bold font-mono max-w-6xl mx-auto text-center text-white  text-[1rem] mt-6 lg:-ml-6">
             <h1 class="lg:-ml-[35rem]">Kontak Kami</h1>
             <h1 class="lg:-ml-[35rem]  hover:underline">MEADYS@Gmail.com</h1>
@@ -86,7 +87,7 @@
             class="font-bold font-mono max-w-6xl mx-auto text-center text-white  text-[1rem] lg:ml-[60rem] lg:-mt-[3rem] lg:opacity-75">
             &copy; MEADYS.<br>Hak cipta dilindungi
         </div>
-    </footer>
+    </footer> --}}
 </body>
 
 </html>

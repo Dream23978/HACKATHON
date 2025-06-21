@@ -9,7 +9,7 @@
     @vite('resources/css/app.css')
 </head>
 
-<body class="min-h-screen bg-gray-50">
+<body class="min-h-screen bg-gray-50 animate-fadeinb">
 
 
 

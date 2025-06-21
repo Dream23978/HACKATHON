@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\DaftarController;
 use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\AntriController;
 
 Route::get('/', function () {
     return view('Index.Login');
@@ -38,6 +39,8 @@ Route::get('/daftarsuccess', function () {
 
 Route::post('/daftar/store', [DaftarController::class, 'store']) -> name ('daftar.store');
 Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
+
+Route::get('/cek-antrian', [AntriController::class, 'index'])->name('cek-antrian');
 
 // Route::view('dashboard', 'dashboard')
 //     ->middleware(['auth', 'verified'])

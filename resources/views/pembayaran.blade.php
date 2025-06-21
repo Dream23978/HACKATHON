@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Pembayaran</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    @vite('resources/css/app.css')
 </head>
 
 <body class="min-h-screen bg-gray-50">
@@ -22,7 +22,6 @@
         <div class="bg-white rounded-lg shadow p-6">
             <h2 class="text-lg font-semibold mb-4">Metode Pembayaran</h2>
 
-            <!-- Payment Details -->
             <div class="mb-6">
                 <h3 class="text-md font-medium">Pembayaran untuk:</h3>
                 <ul class="list-disc list-inside mb-4">
@@ -34,7 +33,6 @@
                 </p>
             </div>
 
-            <!-- Cash Payment Method -->
             <div class="mb-6">
                 <h3 class="text-md font-medium">Cash (Bayar ke Dokter Langsung)</h3>
                 <button
@@ -43,7 +41,6 @@
                 </button>
             </div>
 
-            <!-- Bank Transfer Payment Method -->
             <div>
                 <h3 class="text-md font-medium">Transfer Bank (Prototype)</h3>
                 <p class="text-gray-700">Silakan transfer ke rekening berikut:</p>
